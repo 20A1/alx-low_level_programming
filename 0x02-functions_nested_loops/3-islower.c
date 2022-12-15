@@ -6,7 +6,7 @@
 *Return: 1 if character is lowercase, 0 otherwise.
 */
 
-int 3_islower(int c)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
@@ -14,6 +14,6 @@ int 3_islower(int c)
 	}
 	else
 	{
-	return (0);
+		return (0);
 	}
 }
