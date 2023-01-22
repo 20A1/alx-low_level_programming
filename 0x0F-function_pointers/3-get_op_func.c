@@ -11,17 +11,14 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-<<<<<<< HEAD
-	op_t key[]={{"+",op_add},{"-",op_sub},{"*",op_mul},{"/",op_div},{"%",op_mod}};
-=======
 	op_t ops[] = {
-		 {"+", op_add},
-		 {"-", op_sub},
-		 {"*", op_mul},
-		 {"/", op_div},
-		 {"%", op_mod},
-		 {NULL, NULL}};
->>>>>>> 7d61b25ea87bf03edbc2bcee667d3b1d9f1328fb
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
 	int i = 0;
 
 	while (ops[i].op != NULL && *(ops[i].op) != *s)
