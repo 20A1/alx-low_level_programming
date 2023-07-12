@@ -1,3 +1,4 @@
-First readme
-Learning Objectives At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-General When and why using linked lists vs arrays How to build and use linked lists
+# C - Singly linked lists
+---
+
+A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.

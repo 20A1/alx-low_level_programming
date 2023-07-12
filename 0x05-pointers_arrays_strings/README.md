@@ -1,1 +1,1 @@
-First read me
+pointers array strings

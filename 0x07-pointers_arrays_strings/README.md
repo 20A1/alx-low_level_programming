@@ -1,1 +1,1 @@
-First read me
+0x07-pointer && strings

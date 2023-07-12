@@ -1,23 +1,29 @@
 #include <stdio.h>
 
+#include <ctype.h>
 /**
-*main - print alphabet in lower and uppercase
-*Return: (0) Success
-*/
-
+ * main - main block
+ * Description: Get a random number and print the number
+ * positive,negative or zero
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	char lower = 'a';
-	char upper = 'A';
-
-	for (lower = 'a'; lower <= 'z'; lower++)
-	{
-		putchar(lower);
-	}
-	for (upper = 'A'; upper <= 'Z'; upper++)
-	{
-		putchar(upper);
-	}
-	putchar('\n');
-	return (0);
+int alphabet;
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+alphabet = tolower(alphabet);
+putchar(alphabet);
+if (alphabet == 'z')
+{
+alphabet = 'A';
+for (; alphabet <= 'Z'; alphabet++)
+{
+putchar(alphabet);
+}
+break;
+}
+}
+putchar('\n');
+return (0);
 }

@@ -1,18 +1,23 @@
 #include <stdio.h>
 
+#include <ctype.h>
 /**
-*main - Print the alphabet in lowercase letters, except for e and q
-*Return: Always 0 (Success)
-*/
-
+ * main - main block
+ * Description: Get a random number and print the number
+ * positive,negative or zero
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	char alpha = 'a';
+	int letters;
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	for (letters = 'a'; letters <= 'z'; letters++)
 	{
-		if (alpha != 'e' && alpha != 'q')
-		putchar(alpha);
+		if (letters  == 'q' || letters == 'e')
+		{
+			continue;
+		}
+		putchar(letters);
 	}
 	putchar('\n');
 	return (0);

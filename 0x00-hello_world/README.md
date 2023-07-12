@@ -1,1 +1,1 @@
-first readme
+Todays task on C Lang

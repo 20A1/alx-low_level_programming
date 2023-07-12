@@ -1,22 +1,24 @@
 #include <stdio.h>
 
+#include <ctype.h>
 /**
-*main - print 0-9 separated with commas, using putchar
-*Return: Always 0 (Success)
-*/
-
+ * main - main block
+ * Description: Get a random number and print the number
+ * positive,negative or zero
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	int n;
+	int digit;
 
-	for (n = 0; n <= 9; n++)
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		putchar(n + '0');
-		if (n < 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar(digit);
+		if (digit == '9')
+			continue;
+
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);

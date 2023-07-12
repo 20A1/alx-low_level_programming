@@ -1,1 +1,2 @@
-first readme
+if else
+things work out fine

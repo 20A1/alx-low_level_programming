@@ -1,16 +1,20 @@
 #include <stdio.h>
 
+#include <ctype.h>
 /**
- *main - Entry point
- *Return: Always 0 (Success)
+ * main - main block
+ * Description: Get a random number and print the number
+ * positive,negative or zero
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char c;
-
-	for (c = 'a' ; c <= 'z'; c++)
-	putchar(c);
-	putchar('\n');
-	return (0);
+int alphabet;
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+alphabet = tolower(alphabet);
+putchar(alphabet);
+}
+putchar('\n');
+return (0);
 }

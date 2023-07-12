@@ -1,18 +1,20 @@
 #include <stdio.h>
 
+#include <ctype.h>
 /**
-*main - print 0123456789 using putchar
-*Return: Always 0 (Success)
-*/
-
+ * main - main block
+ * Description: Get a random number and print the number
+ * positive,negative or zero
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	int digit;
+	int number;
 
-	for (digit = 0; digit < 10; digit++)
+	for (number = '0'; number <= '9'; number++)
 	{
-		putchar(digit + '0');
+		putchar(number);
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }

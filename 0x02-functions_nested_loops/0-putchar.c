@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
-*main - Print the word "_putchar"
-*Return: Always 0 (Success)
-*/
-
+ *main - Entry point
+ *
+ *Return: nothing, return void
+ */
 int main(void)
 {
 	_putchar('_');
@@ -16,5 +15,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
